@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="images/personal-pic.png" type="image/x-icon">
+    <title>Mohamed Adel</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <video class="video-loop" autoplay loop muted>
+        <source src="./video-loop.mp4" type="video/mp4" />
+      </video>
+
+      <header class="header">
+        <label for="menu" class="burger-menu">
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+        </label>
+
+        <input id="menu" class="burger-menu__checkbox" type="checkbox" />
+
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li>
+              <a class="navigation__link navigation__bio" href="#bio">التعريف</a>
+            </li>
+            <li>
+              <a class="navigation__link navigation__skills" href="#skills">المهارات</a>
+            </li>
+            <li>
+              <a class="navigation__link navigation__media" href="#media">فيديو تعريفي</a>
+            </li>
+            <li>
+              <a class="navigation__link navigation__projects" href="#projects">دواراتي</a>
+            </li>
+            <li>
+              <a class="navigation__link navigation__clients" href="#clients"> المجالات  </a>
+            </li>
+            <li>
+              <a class="navigation__link navigation__contact" href="#contact">راسلني</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="toggle">
+          <h3 class="toggle__title"> غير الون</h3>
+          <input id="toggle" class="toggle__checkbox" type="checkbox" />
+          <label class="toggle__label" for="toggle" role="button" tabindex="0"></label>
+        </div>
+      </header>
+
+      <section id="bio" class="section bio">
+        <div class="bio__data">
+          <h1 class="bio__heading">مرحبا انا استشاري تطوير اعمال</h1>
+          <p class="bio__objective">
+            اسمي <span class="bio__name">محمد عادل</span>, عملت كاستشاري و مدير موارد بشرية في شركات مختلفة و يمكنم ايضاان تجدوني علي
+            <a class="bio__facebook" href="https://www.facebook.com/m.abusrea">Facebook</a>,
+            <a class="bio__twitter" href="https://twitter.com/mohamed_abusrea">Twitter</a>,
+            <a class="bio__linkedin" href="https://www.linkedin.com/in/mohamedabusrea/">LinkedIn</a> و
+            <a class="bio__youtube" href="https://www.youtube.com/@el-business4107/videos">Youtube</a>.
+          </p>
+          <a class="bio__links say-hi-link" href="#contact"> راسلني</a>
+          <a class="bio__links find-out-link" href="./assets/mohamedAbusreaResume.pdf">
+            تحميل الملف التعريفي خاصتي <span class="bio__arrow">↓</span>
+          </a>
+        </div>
+        <div class="bio__pic-content">
+          <img class="bio__pic" src="./images/personal-pic.png" alt="personal pic of Mohamed Abusrea" />
+        </div>
+      </section>
+
+      <section id="skills" class="section skills section--with-bg">
+        <h2 class="h2-heading"> </h2>
+        <div class="skills__filters">
+        </div>
+        <ul class="skills__list">
+          <li data-name="HTML" class="skills__column">
+            <h2 class="skills__title"><a href=""></a></h2>
+            <span class="skills__years"></span>
+          </li>
+          <li data-name="CSS" class="skills__column">
+            <h2 class="skills__title"></h2>
+            <span class="skills__years"></span>
+          </li>
+          <li data-name="Javascript" class="skills__column">
+            <h2 class="skills__title"></h2>
+            <span class="skills__years"></span>
+          </li>
+          <li data-name="React" class="skills__column">
+            <h2 class="skills__title"></h2>
+            <span class="skills__years"></span>
+          </li>
+          <li data-name="Redux" class="skills__column">
+            <h2 class="skills__title"></h2>
+            <span class="skills__years"></span>
+          </li>
+          <li data-name="React testing library" class="skills__column">
+            <h2 class="skills__title">  </h2>
+            <span class="skills__years"></span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="media" class="section media">
+        <video class="media__video" src="./video.mp4" poster="./images/thumbnail.png" controls></video>
+      </section>
+
+      <section id="projects" class="section projects">
+        <h2 class="h2-heading">
+          دواراتي
+        </h2>
+        <div class="projects__main">
+          <img class="projects__img responsive-img" src="./images/project-1.png" alt="Quran Tab Extension" />
+          <div class="projects__data">
+            <h3 class="h3-heading">
+               المستكشف <br />
+              
+            </h3>
+            <p class="projects__description">
+              الفكرة بدأت من 2004 لما وجدت ان الشباب محتاج برنامج يكون قائم على التطبيق العملي للمهارات الادارية و الحياتية اللي هو محتاجها علشان النجاح في الحياة الخاصة و العملية
+            </p>
+            <a class="projects__link" href="https://web.telegram.org/a/#-1945172212" target="_blank">رابط الكورس</a>
+            <span>-</span>
+            <a class="projects__link" href="https://almostakshef.com/" target="_blank">رابط الموقع</a>
+          </div>
+
+          <div class="projects__data">
+            <h3 class="h3-heading">
+              ادارة المال  <br />
+              
+            </h3>
+            <p class="projects__description">
+          عن ادارة المال
+            </p>
+            <a class="projects__link" href="https://www.udemy.com/course/moneymanagement/" target="_blank">رابط الكورس </a>
+            <span></span>
+            <span></span>
+          </div>
+          <img class="projects__img responsive-img" src="./images/project-2.jpg" alt="Quran Tab Extension" />
+        </div>
+      </section>
+
+      <section id="clients" class="section clients section--with-bg">
+        <h2 class="h2-heading">
+          المجالات <br />
+           
+        </h2>
+        <!-- <div class="clients__arrows">
+        <img class="clients__arrow" src="./images/left-arrow.png" width="80" alt="left arrow">
+        <img class="clients__arrow" src="./images/right-arrow.png" width="80" alt="right arrow">
+      </div> -->
+        <div class="clients__opinions">
+          <div class="clients__wrapper">
+            <p class="clients__opinion">
+              خبرة 16 سنة في مجال الموارد البشرية و التدريب – عمل في عدة شركات محلية و عالمية
+              الوظيفة الحالية : مدير إدارة الموارد البشرية لاحدى الشركات العقارية
+              تقديم استشارات إدارية لعدد 7 شركات
+                
+            </p>
+            <p class="clients__opinion">
+              القاء عدة محاضرات في عدة جامعات ( عين شمس – القاهرة – الازهر )
+              اكثر من 3000 ساعة تدريب – 14000 متدرب
+              
+            </p>
+            <p class="clients__opinion">
+              مجال العمل
+
+              عمل كمدير ادارة الموارد البشرية / استشاري تطوير لعدة شركات
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div>
+          <p class="contact__description">
+           يمكنك ان تراسلني عبر 
+          </p>
+
+          <a href="mailto: example@gmail.com" class="contact__email">mohammedadel75@gmail.com</a>
+
+          <div class="contact__socials">
+            <a class="contact__social" href="#">
+              <img src="./images/brand/facebook.svg" alt="facebook" />
+            </a>
+            <a class="contact__social" href="#">
+              <img src="./images/brand/twitter.svg" alt="twitter" />
+            </a>
+            <a class="contact__social" href="https://www.youtube.com/@el-business4107/videos">
+              <img src="./images/brand/youtube.svg" alt="youtube" />
+            </a>
+        
+            <a class="contact__social" href="#">
+              <img src="./images/brand/instagram.svg" alt="instagram.svg" />
+            </a>
+            <a class="contact__social" href="#">
+              <img src="./images/brand/LinkedIn.svg" alt="LinkedIn.svg" />
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__formContent">
+          <h2 class="h2-heading">
+             ارسل لي رسالة قصيرة  <br />
+          
+          </h2>
+          <form action="results.html">
+            <div class="contact__inputs">
+              <input type="text" class="contact__input" name="name" placeholder="Full Name" required />
+              <!-- <input type="email" class="contact__input" placeholder="Email" required /> -->
+              <input
+                type="tel"
+                class="contact__input"
+                placeholder="Phone No."
+                name="tel"
+                required
+              />
+            </div>
+            <textarea
+              class="contact__input contact__textarea"
+              name="message"
+              placeholder="Your Message"
+              rows="1"
+              required
+            ></textarea>
+            <input type="submit" class="contact__button" value="Send Message" />
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">© 2023 by <a href="
+        https://linktr.ee/adel_mohammed">Adel Mohammed</a></footer>
+    </div>
+    <script src="./scripts/looping-for-forIn-forOf-while.js"></script>
+  </body>
+</html>
