@@ -1,0 +1,356 @@
+/* Reset some default styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+  background-image: linear-gradient(-45deg, #034774 0%, #010f3f 100%);
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navigation Bar styles */
+.navbar {
+  background-image: linear-gradient(-45deg, #034774 0%, #010f3f 100%);
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Hero Section styles */
+.hero {
+  background-color: #f89b29;
+  color: #ffffff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #f89b29;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+/* Services Section styles */
+.services {
+  padding: 100px 0;
+}
+
+.services h2 {
+  font-size: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.service-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  font-size: 24px;
+  color: #3498db;
+}
+
+.service-card p {
+  color: #555555;
+}
+
+/* Courses Section styles */
+.courses {
+  padding: 100px 0;
+  background-color: #f0f0f0;
+}
+
+.courses h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.course-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-card h3 {
+  font-size: 24px;
+  color: #3498db;
+}
+
+.course-card p {
+  color: #555555;
+}
+
+/* Contact Section styles */
+.contact {
+  padding: 100px 0;
+}
+
+.contact h2 {
+  font-size: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact button {
+  display: block;
+  background-color: #f89b29;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.contact button:hover {
+  background-color: #ff0f7b;
+}
+
+/* Footer Section styles */
+.footer {
+  background-color: #3498db;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Card styles */
+.card {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  background-image: linear-gradient(-45deg, #034774 0%, #010f3f 100%);
+  border-radius: 10px;
+  display: flex;
+  padding: 10px 30px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+
+.card .heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.card .para {
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.7;
+  line-height: 1.4;
+}
+
+.card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.card .card-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: 600;
+  padding: 10px 20px;
+  font-size: 16px;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+  border: none;
+  opacity: 0;
+  scale: 0;
+  transform-origin: 0 0;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover .card-btn {
+  opacity: 1;
+  scale: 1;
+}
+
+.card .card-btn:hover {
+  box-shadow: 0 0 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card .card-btn:active {
+  scale: 0.95;
+}
+
+.card .overlay::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(-45deg, #034774 0%, #010f3f 100%);
+  transition: transform 0.5s ease;
+}
+
+.card:hover .overlay::after {
+  transform: translate(-50%, -50%) scale(2);
+}
+
+/* Consultant and Corporate Development Sections styles */
+.about-section {
+  background-image: linear-gradient(-45deg, #034774 0%, #010f3f 100%);
+  padding: 50px 0;
+  color: #ffffff;
+  border-radius: 2rem;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-image {
+  flex: 1;
+  margin-right: 5rem;
+  margin-left: -5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-text h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Modal Styles */
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the desired blur intensity */
+  backdrop-filter: blur(5px); /* This creates the blur effect */
+  display: none;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(-45deg, #034774 0%, #010f3f 100%);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #f7f7f7;
+}
+
+.modal-close-btn {
+  margin-top: 10px;
+  cursor: pointer;
+}
